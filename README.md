@@ -19,7 +19,7 @@ allprojects {
 
  ````
 dependencies {
-	implementation 'com.github.gb007:startmodule:1.0.0'
+	implementation 'com.github.gb007:newsmodule:1.0.0'
 	}
 
 ````
@@ -27,7 +27,38 @@ dependencies {
 
 ## 3.初始化配置信息
 
-### 3.1 Manifest中添加新闻详情页面Activity, 
+### 3.1 Manifest中添加网络请求申请权限，如果请求伟http则需要application中usesCleartextTraffic属性设为true
+
+````   
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hollysmart.moduleintegrate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".IntegrateApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity
+            android:name="com.hollysmart.newsmodule.activity.NewsDetailsActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>
+
+```` 
+
+
+
+### 3.1 Manifest中添加新闻详情页面Activity,
 
 ````
         <activity
