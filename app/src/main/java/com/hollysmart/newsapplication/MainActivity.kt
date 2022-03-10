@@ -110,8 +110,6 @@ class MainActivity : AppCompatActivity() {
             LanmuBean("143", "协会"),LanmuBean("36", "健康知识")
             )
 
-
-
         var dongtaiFragment = DongtaiFragment()
         var newsConfig = NewsConfig()
         newsConfig.basE_URL = "http://tschangyuan-api.hollysmart.com:60001"
