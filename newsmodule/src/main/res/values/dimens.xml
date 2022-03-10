@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="news_module_text_da">22dp</dimen>
+    <dimen name="news_module_text_da2">20dp</dimen>
+    <dimen name="news_module_text_zhong">18dp</dimen>
+    <dimen name="news_module_text_zhongxiao">16dp</dimen>
+    <dimen name="news_module_text_xiao">14dp</dimen>
+
+</resources>

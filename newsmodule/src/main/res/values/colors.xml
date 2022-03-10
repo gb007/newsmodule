@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="news_module_white">#ffffff</color>
+
+    <color name="news_module_tab_normal">#D3D7E0</color>
+    <color name="news_module_tab_selected">#345095</color>
+    <color name="news_module_blue">#216DEE</color>
+
+    <color name="news_module_background">#F5F5F5</color>
+    <color name="news_module_black6">#666666</color>
+
+    <color name="news_module_black">#444444</color>
+    <color name="news_module_black_c8">#C8C8C8</color>
+
+
+    <color name="news_module_line">#EEEEEE</color>
+
+    <color name="news_module_black3">#333333</color>
+    <color name="news_module_grey">#C3C3C3</color>
+
+    <color name="news_module_select_red">#FF3434</color>
+    <color name="news_module_select_yellow">#FFB500</color>
+
+</resources>

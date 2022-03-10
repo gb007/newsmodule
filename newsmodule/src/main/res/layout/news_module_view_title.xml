@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/sbh"
+            android:src="@color/news_module_white" />
+
+        <com.hollysmart.newsmodule.view.statusbar.StatusBarHeightView
+            android:id="@+id/sbh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:use_type="use_padding_top">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/news_module_icon_back" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/news_module_black3"
+                    android:singleLine="true"
+                    android:maxWidth="220dp"
+                    android:textSize="@dimen/news_module_text_da" />
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:minWidth="60dp"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/news_module_black3"
+                    android:textSize="@dimen/news_module_text_zhong"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="15dp"
+                    android:visibility="gone"
+                    android:src="@drawable/news_module_icon_share" />
+
+                <ImageView
+                    android:id="@+id/iv_right2"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/iv_right"
+                    android:padding="15dp"
+                    android:visibility="gone"
+                    android:src="@drawable/news_module_icon_detail_shoucang" />
+
+            </RelativeLayout>
+
+        </com.hollysmart.newsmodule.view.statusbar.StatusBarHeightView>
+    </RelativeLayout>
+
+</LinearLayout>

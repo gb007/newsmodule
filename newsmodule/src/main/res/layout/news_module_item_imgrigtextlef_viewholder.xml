@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="15dp">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:maxLines="2"
+                android:text="短道速滑武大靖受金牌婆娘记录 为中国体育在添荣光"
+                android:textColor="@color/news_module_black"
+                android:textSize="@dimen/news_module_text_zhongxiao" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/tv_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="置顶"
+                    android:textColor="#DA372B"
+                    android:textSize="@dimen/news_module_text_xiao"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_new_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="发布时间：2019-02-01"
+                    android:textColor="@color/news_module_black_c8"
+                    android:textSize="@dimen/news_module_text_xiao" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/news_module_bg_yuanjiao_danlan_6dp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/news_module_view_line_h" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

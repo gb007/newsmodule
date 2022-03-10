@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/news_module_white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/news_module_view_title" />
+
+        <com.hollysmart.newsmodule.view.JudgeNestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="WebViewLayout">
+
+                <com.hollysmart.newsmodule.dsbridge.DWebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/ll_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_dianzan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/news_module_bg_stock_grey_15dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+                        <ImageView
+                            android:id="@+id/iv_dianzan"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/news_module_icon_zan_b" />
+
+                        <TextView
+                            android:id="@+id/tv_zan_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="0"
+                            android:textColor="@color/news_module_grey"
+                            android:textSize="@dimen/news_module_text_xiao" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_shoucang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="80dp"
+                        android:background="@drawable/news_module_bg_stock_grey_15dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+                        <ImageView
+                            android:id="@+id/iv_shoucang"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/news_module_icon_shoucang_b" />
+
+                        <TextView
+                            android:id="@+id/tv_shoucang_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="0"
+                            android:textColor="@color/news_module_grey"
+                            android:textSize="@dimen/news_module_text_xiao" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </com.hollysmart.newsmodule.view.JudgeNestedScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

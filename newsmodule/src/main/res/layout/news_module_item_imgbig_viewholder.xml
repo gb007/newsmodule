@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在视频直播首钢体育馆集训"
+        android:textColor="@color/news_module_black"
+        android:textSize="@dimen/news_module_text_zhongxiao" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/news_module_bg_yuanjiao_danlan_6dp" />
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="置顶"
+            android:textColor="#DA372B"
+            android:textSize="@dimen/news_module_text_xiao"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_new_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="发布时间：2019-02-01"
+            android:textColor="@color/news_module_black_c8"
+            android:textSize="@dimen/news_module_text_xiao" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/news_module_view_line_h" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
