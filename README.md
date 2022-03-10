@@ -46,24 +46,41 @@ dependencies {
               LanmuBean("35", "体育资讯"),LanmuBean("100", "赛事活动"),
             LanmuBean("143", "协会"),LanmuBean("36", "健康知识")
             )
-        
+
         var dongtaiFragment = DongtaiFragment()
+        //新闻模块配置类
         var newsConfig = NewsConfig()
+        //服务器地址
         newsConfig.basE_URL = "http://tschangyuan-api.hollysmart.com:60001"
+        //文件服务器地址（获取的图片）
         newsConfig.filE_URL = "http://tschangyuan.hollysmart.com/"
+        //新闻栏目（id，名称）
         newsConfig.lanmuBeans = columnList
+        //新闻栏目tab字体大小
         newsConfig.tabTitleTextSize = 18
+        //新闻栏目tab字体颜色
         newsConfig.titleNormalColor = R.color.tab_normal
+        //新闻栏目选中tab字体颜色
         newsConfig.titleSelectedColor = R.color.tab_selected
+        //新闻栏目tab下划线长度
         newsConfig.indicatorWidth = 26
+        //新闻栏目tab下划线高度
         newsConfig.indicatorHeight = 3
+        //新闻栏目tab下划线圆角
         newsConfig.indicatorRoundRadius = 1
+        //新闻栏目tab下划线颜色
         newsConfig.indicatorColor = R.color.blue
+        //用户是否登陆
         newsConfig.isLogin = false
+        //用户Id
         newsConfig.userdId = "11111"
+        //设备唯一标识
         newsConfig.uuid = "1234567890"
+        //javascriptObject,新闻详情页面js方法
+//        newsConfig.javascriptObject = null
 
         dongtaiFragment.config = newsConfig
+        
         return dongtaiFragment
     }
 

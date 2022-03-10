@@ -25,7 +25,7 @@ public class NewsConfig {
     private int indicatorWidth;
     //新闻栏目tab下划线高度
     private int indicatorHeight;
-    //新闻栏目tab下划线长度
+    //新闻栏目tab下划线圆角
     private int indicatorRoundRadius;
     //新闻栏目tab下划线颜色
     private int indicatorColor;
